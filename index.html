@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Basic layout */
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 0px !important;
+        }
+
+        /* Navigation */
+        header {
+            background: #d95757;
+            color: #fff;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+            .nav-links a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: 500;
+                transition: color 0.3s;
+            }
+
+                .nav-links a:hover {
+                    color: #00bcd4;
+                }
+
+        #hero {
+            background-image: url('just.jfif');
+            background-repeat: no-repeat;
+            background-size: cover; /* Makes image fill the entire section */
+            background-position: center; /* Keeps image centered when resizing */
+            color: white;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+            #hero h2 {
+                font-size: 2.5rem;
+            }
+
+            #hero span {
+                color: #ffeb3b;
+            }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            background: #fff;
+            color: #2196f3;
+            padding: 0.7rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+
+            .btn:hover {
+                background: #2196f3;
+                color: #fff;
+            }
+
+        /* Sections */
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        #projects .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 2rem;
+            transition: transform 0.3s;
+        }
+
+            .project-card:hover {
+                transform: translateY(-5px);
+            }
+
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+            position: relative;
+        }
+
+        .footer-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-content p {
+            color: #ccc;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+            .social-icons a {
+                color: #fff;
+                font-size: 1.3rem;
+                width: 40px;
+                height: 40px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                transition: all 0.3s ease;
+            }
+
+
+
+        .copyright {
+            font-size: 0.9rem;
+            color: #aaa;
+            margin-top: 1rem;
+        }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">MyPortfolio</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Hello, I'm <span>Your Name</span></h2>
+            <p>Front-End Developer | Designer | Coder</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a passionate web developer who loves creating visually appealing and user-friendly websites. I enjoy working with modern web technologies like HTML, CSS, JavaScript, and React.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project One</h3>
+                <p>A description of your first project. It could be a website, app, or design.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project Two</h3>
+                <p>Another project you’re proud of — describe what you built and why.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project Three</h3>
+                <p>This can be a personal or professional project. Include a link if available!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Let's connect! Feel free to reach out via email or social media.</p>
+        <a href="mailto:youremail@example.com" class="btn">Email Me</a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Your Name</h3>
+            <p>Thank you for visiting my portfolio! Let’s connect on social media:</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
